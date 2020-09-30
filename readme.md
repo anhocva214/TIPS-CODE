@@ -146,7 +146,7 @@ cat /etc/nginx/.htpasswd
 ```
 
 
-# Audo push codo to github by Python
+# Audo push code to github by Python
 * [Install Python](https://www.python.org/)
 * Create file pushGit.py or name orther
 * Copy and paste code below into file your
