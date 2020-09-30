@@ -19,6 +19,7 @@
 ``` bash
     sudo npm info <project_name or project_id> 
 ```
+
 # NGINX
 * Install
 ``` bash
@@ -67,6 +68,7 @@
     sudo nginx -t
     sudo systemctl restart nginx
 ```
+
 # DEPLOY
 * Node Js (Express) to VPS
 ``` bash
@@ -82,6 +84,7 @@
     npm run build
     pm2 start ./node_modules/react-scripts/scripts/start.js --name "project_name"
 ```
+
 # GITHUB
 * Clone a repository on the command line
 ``` bash
@@ -107,6 +110,7 @@
     git remote add origin <Link github my project>
     git push -f origin master
 ```
+
 #  Set Up Basic HTTP Authentication With Nginx on Ubuntu - [Link](https://www.digitalocean.com/community/tutorials/how-to-set-up-basic-http-authentication-with-nginx-on-ubuntu-14-04)
 * Installing Apache Tools
 ``` bash
@@ -145,11 +149,10 @@ cat /etc/nginx/.htpasswd
     sudo service nginx reload
 ```
 
-
-# Audo push code to github by Python
+# Audo Push Code To Github By Python
 * [Install Python](https://www.python.org/)
 * Create file pushGit.py or name orther
-* Copy and paste code below into file your
+* Copy and paste code below into your file
 ``` python
     import os
     from datetime import datetime
@@ -164,3 +167,18 @@ cat /etc/nginx/.htpasswd
     python <filename your>
 ```
 Example: ``` python pushGit.py ```
+
+# Publish Npm Package
+* Inittialize and setting info your project npm follow code below:
+```bash
+    npm init
+```
+* Publish:
+```bash
+    npm publish
+```
+* Update
+    Change version in your project and publish again
+```bash
+    npm publish
+```
