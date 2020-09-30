@@ -178,7 +178,7 @@ Example: ``` python pushGit.py ```
     npm publish
 ```
 * Update
-    Change version in your project and publish again
+Change version in your project and publish again
 ```bash
     npm publish
 ```
