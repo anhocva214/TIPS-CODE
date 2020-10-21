@@ -77,7 +77,7 @@ pm2 start ./bin/www
 * Next Js to VPS
 ``` bash
 npm run build
-pm2 start npm --name <project_name> --start
+pm2 start npm --name <project_name> -- start
 ```
 * React Js to VPS
 ``` bash
