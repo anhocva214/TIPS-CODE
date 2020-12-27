@@ -63,6 +63,21 @@ sudo npm info <project_name or project_id>
     }
 }
 ```
+```bash
+    server {
+    listen 80;
+    listen [::]:80;
+    server_name host_name;
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+```
+
 * Check error and restart  after config
 ``` bash
 sudo nginx -t
@@ -158,9 +173,9 @@ import os
 from datetime import datetime
 now = datetime.now()
 date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
-print(os.system("git add ."))
-print(os.system("""git commit -m " """+date_time+""" " """))
-print(os.system("git push origin master"))
+os.system("git add .")
+os.system("""git commit -m " """+date_time+""" " """)
+os.system("git push origin master")
 ```
 * Run file follow code below:
 ```bash
