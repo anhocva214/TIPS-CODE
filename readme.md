@@ -25,12 +25,17 @@ sudo npm info <project_name or project_id>
 ``` bash
     sudo apt-get install nginx
 ```
-* Edit file default
+* Create "your_domain" file 
 ``` bash
-    sudo vi /etc/nginx/sites-available/default
+    cd /etc/nginx/sites-available
+    touch your_domain
 ```
-
-* Config server in file default
+* Create "your_domain" file 
+``` bash
+    cd /etc/nginx/sites-available
+    touch your_domain
+```
+* Config server in file "your_domain"
 ``` bash
     server {
     listen 80;
@@ -75,6 +80,7 @@ sudo npm info <project_name or project_id>
         proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
+        }
     }
 ```
 
@@ -87,7 +93,7 @@ sudo systemctl restart nginx
 # DEPLOY
 * Node Js (Express) to VPS
 ``` bash
-pm2 start ./bin/www
+pm2 start ./bin/www --name <project_name>
 ```
 * Next Js to VPS
 ``` bash
