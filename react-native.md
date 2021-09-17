@@ -44,9 +44,14 @@ Hope this will help others.
     https://makeappicon.com/
 
 ### 5. Tạo splash screen cho ios:
-    Link: https://medium.com/flawless-app-stories/change-splash-screen-in-ios-app-for-dummies-the-better-way-e385327219e
 
-> Thêm `ImageView` thì chọn `View` -> `Show Library`
+Link: https://medium.com/flawless-app-stories/change-splash-screen-in-ios-app-for-dummies-the-better-way-e385327219e
+
+```
+Thêm `ImageView` thì chọn `View` -> `Show Library`
+
+Nếu background không đổi thì tắt máy ảo rồi mở lại
+ ```
 
 ### 6. Multiple commands produce '/Users/attorneyking/Library/Developer/Xcode/DerivedData/kingattorney-etqotwowxrxhvfavnwycktyoaazs/Build/Products/Debug-iphonesimulator/kingattorney.app/Zocial.ttf': 1) Target 'kingattorney' (project 'kingattorney') has copy command from '/Users/attorneyking/Documents/App/kingattorney/node_modules/react-native-vector-icons/Fonts/Zocial.ttf' to '/Users/attorneyking/Library/Developer/Xcode/DerivedData/kingattorney-etqotwowxrxhvfavnwycktyoaazs/Build/Products/Debug-iphonesimulator/kingattorney.app/Zocial.ttf' 2) That command depends on command in Target 'kingattorney' (project 'kingattorney'): script phase “[CP] Copy Pods Resources”
 > https://www.it-swarm-vi.com/vi/info.plist/loi-xcode-10-tao-nhieu-lenh/838444394/
