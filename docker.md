@@ -27,3 +27,27 @@ RUN eval $(ssh-agent) && \
     ssh-keyscan -H github.com >> /etc/ssh/ssh_known_hosts && \
     git clone git@github.com:<username>/<repo name>.git
 ```
+
+### How to build a CI/CD pipeline with Docker
+
+`Step 1:` Create **New Access Token** in your DockerHub
+
+`Step 2:` In your repositories github, you need create two serects *DOCKER_HUB_USERNAME* and *DOCKER_HUB_ACCESS_TOKEN*
+
+You can access to **Settings** tab
+
+![](./assets/create-serects.png)
+
+- **DOCKER_HUB_USERNAME** have value is username on DockerHub
+- **DOCKER_HUB_ACCESS_TOKEN** have value is access_token  just created 
+
+`Step 2`: Create **Dockerfile** in your project
+
+`Step 3:` Create *New workflow* in actions tab
+
+* ReactJs: [main.yml](./resources/reactjs/docker.yml)
+
+After, you can click **Start commit**
+
+`Step 4`: Check **image** on DockerHub
+
