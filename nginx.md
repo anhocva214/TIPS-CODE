@@ -48,7 +48,7 @@
 }
 ```
 ```bash
-    server {
+server {
     listen 80;
     listen [::]:80;
     server_name host_name;
@@ -59,8 +59,8 @@
         proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
-        }
     }
+}
 ```
 
 ### Enable your server blocks 
@@ -70,8 +70,7 @@ sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
 
 ### Check error and restart  after config
 ``` bash
-sudo nginx -t
-sudo systemctl restart nginx
+sudo nginx -t && sudo systemctl restart nginx
 ```
 
 # SETUP SSL (HTTPS)
