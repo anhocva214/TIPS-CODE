@@ -84,7 +84,7 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 ```
 ### Install certbot
 ```bash
-apt-get update && sudo apt-get install certbot && apt-get install python-certbot-nginx
+apt-get update && sudo apt-get install certbot && apt-get install python3-certbot-nginx
 ```
 ### Generate certificates by certbot
 
