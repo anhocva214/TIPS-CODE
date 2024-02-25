@@ -24,15 +24,15 @@ sudo npm info <project_name or project_id>
 # DEPLOY
 ### Node Js (Express) to VPS
 ``` bash
-pm2 start ./bin/www --name <project_name>
+pm2 start "yarn start" --name <project_name>
 ```
 ### Next Js to VPS
 ``` bash
 npm run build
-pm2 start npm --name <project_name> -- start
+pm2 start "yarn start" --name <project_name>
 ```
 ### React Js to VPS
 ``` bash
 npm run build
-pm2 start ./node_modules/react-scripts/scripts/start.js --name "project_name"
+pm2 start "yarn start" --name <project_name>
 ```
